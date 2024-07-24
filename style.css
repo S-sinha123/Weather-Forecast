@@ -1,0 +1,244 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    height: 100%;
+    background-image: url(pexels-pixabay-209831.jpg);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9%;
+    text-align: center;
+    background-position: center;
+    margin-top: 2%;
+    background-image: url(th\ \(1\).jpeg);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+span {
+    color: rgb(170, 107, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    height: 88%;
+    box-shadow:10px 10px 10px rgb(8, 8, 8);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    outline: 0;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    margin-right: 16px;
+    color: #555;
+    max-width: 70%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid #6441a5;
+    user-select: auto;
+    transition-duration: 600ms;
+    text-align: center;
+}
+
+.search input:hover{
+    transition-duration: 500ms;
+    border-bottom: 0px;
+}
+
+.search button {
+    outline: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    color: #ebfffc;
+    border: 5px solid dodgerblue;
+    transition-duration: 600ms;
+}
+
+.search button:hover {
+    background-color: #9ad8cf;
+    border: 0px;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.text {
+    font-weight: bold;
+    color: rgb(212, 13, 185);
+}
+
+#time {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: aqua;
+    font-weight: bold;
+}
+
+.weather-icon {
+    margin-top: 5%;
+    width: 30%;
+}
+
+.col img {
+    width: 25%;
+    background-position: center;
+    border-image: none;
+    overflow: hidden;
+}
+
+.weather h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.weather h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0% 5%;
+    margin-top: 5%;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#col2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#col4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#col6 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#col8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.humidity,
+.wind,
+.visibility.cloud {
+    font-size: larger;
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+    color: rgb(255, 30, 30);
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    display: block;
+}
+
+.footer {
+    width: 100%;
+    min-height: 3%;
+    color: #00feba;
+}
+
+.data-col{
+   color:#cd11b7;
+}
+
+@media screen and (max-width:430px) {
+    body {}
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search button{
+     height: 45px;
+     width: 45px;
+    }
+
+    .search input {
+        height: 45px;
+    }
+
+    .card{
+        height: 93%;
+        margin-top: 5%;
+    }
+
+    .heading{
+       max-height:5%;
+       font-size: larger;
+    }
+
+    #col2,#col4,#col6,#col8{
+        margin-top: 2%;
+        font-size: medium;
+        background: linear-gradient(135deg, #33ccff, #ff99cc);
+        border-radius: 5px;
+        padding: 2px;
+    }
+}
